@@ -1,5 +1,7 @@
 // **THIS IS INCREDIBLY IMPORTANT THAT YOU DO BOTH SECTIONS!!! You will be doing only front-end work in 421 and you need to brush up on your HTML elements**
 
+const { parseQuery } = require("mocha/lib/utils");
+
 
 // ***************************
 //          PART ONE
@@ -16,9 +18,18 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+function convertNumToString(num){
+  console.log('inside', typeof num)
+  return num.toString()
+}
+
+const stringAsNumber = convertNumToString(42)
+console.log('outside of function', typeof stringAsNumber)
+
 
 
 // Write a JavaScript program to convert a string to the number.
+const stringToNum = (string) => Number(string);
 
 
 
@@ -29,22 +40,49 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+  function checkType(value){
+    return typeof value;
+  }
 
-  
+  console.log(checkType(1));
+  console.log(checkType("1"));
+  console.log(checkType(false));
+  console.log(checkType(null));
+  console.log(checkType(undefined));
+  console.log(checkType(Nan));
+
 // Write a JavaScript program that adds 2 numbers together.
-
+function add(num1, num2) {
+  return num1 + num2;
+}
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+function bothThingsAreTrue (thing1, thing2){
+  if (thing1 && thing2) {
+    return "They are both true";
+  }
+}
 
-
+console.log(bothThingsAreTrue(true, ""))
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
+function oneThingisTrue (thing1, thing2){
+  if (thing1 || thing2) {
+    return "One thing is true";
+  }
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
+function noThingsAreTrue (thing1, thing2){
+  if (thing1 === false && thing2 === false) {
+    return "They are both true";
+  }
+}
+
+
+
 
 // ***************************
 //         PART TWO
