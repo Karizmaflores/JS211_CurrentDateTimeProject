@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
-    <div id="display-element"></div>
-    <input type="button" onclick="displayDate()" value="Click Me"/>
+    
+    <button type="button" onclick="document.getElementById('display-element').innerHTML = Date()">Show Date</button>
     <hr/>
+    <div id="display-element"></div>
+
+
+    
   </body>
 </html>
