@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js" defer></script>
+    <script src="./dom.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -13,13 +13,83 @@
     <hr/>
     <div id="display-element"></div>
 
-    <button type="button" onclick="document.getElementById('display-element2').innerHTML = convertNumToString(42)">Convert Num to String</button>
+
+
+
+
+
+    <input type="number" id="numString">
+    <button type="button" onclick="convertNumToString()">Convert Num to String</button>
     <hr/>
     <div id="display-element2"></div>
 
-    <input type="text" placeholder="string to the number"oninput="document.getElementById('display-element3').innerHTML = Number()"></button>
+
+
+
+
+
+
+
+    <input type="text" id="stringNum">
+    <button type="button" onclick="stringToNum()">String to Num</button>
     <hr/>
     <div id="display-element3"></div>
+
+
+
+
+
+
+
+    <input type="text" id="datatypeCheck">
+    <button type="button" onclick="checkType()">Check Type</button>
+    <hr/>
+    <div id="display-element4"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button type="button" onclick="addNumbers()">Add numbers</button>
+    <hr/>
+    <div id="display-element5"></div>
+
+
+
+
+
+
+
+
+
+
+    <input type="number" id="thing1">
+    <input type="number" id="thing2">
+    <button type="button" onclick="evenNumbers()">Check even numbers</button>
+    <hr/>
+    <div id="display-element6"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
